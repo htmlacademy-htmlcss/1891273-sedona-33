@@ -60,7 +60,7 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
-                    <ul class="catalog-filter-list"></ul>
+                    <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="checkbox" name="swimming-pool" checked>
@@ -106,8 +106,8 @@
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <input type="text" id="price" name="price" value="0" placeholder="От">
-                    <input type="text" id="price" name="price" value="9000" placeholder="До">
+                    <input type="text" id="form" name="price" value="0" placeholder="От">
+                    <input type="text" id="to" name="price" value="9000" placeholder="До">
                     <input type="range" min="0" max="9000" step="100">
                 </fieldset>
                 <button class="button" type="submit">Применить</button>
@@ -207,7 +207,7 @@
                 </label>
                 <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email">
                 <button class="button newsletter-email" type="submit">
-                    <span">Подписаться</span>
+                    <span>Подписаться</span>
                 </button>
             </form>
         </section>
@@ -236,6 +236,7 @@
               </a>
             </li>
           </ul>
+        </section>
           <section class="contacts">
             <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
           </section>
