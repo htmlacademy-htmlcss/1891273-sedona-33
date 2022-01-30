@@ -4,7 +4,7 @@
   background-color: #288bb3;
   color: #ffffff;
   background-image: url("../image/background-mailing.jpg");
-  background-size: 1200 411;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .filters {
@@ -13,6 +13,6 @@
   background-color: #288bb3;
   color: #ffffff;
   background-image: url("../image/catalog-background.jpg");
-  background-size: 1200 411;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
