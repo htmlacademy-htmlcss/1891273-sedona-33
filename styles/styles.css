@@ -1,0 +1,18 @@
+.subscription {
+  width: 1200px;
+  height: 411px;
+  background-color: #288bb3;
+  color: #ffffff;
+  background-image: url("../image/background-mailing.jpg");
+  background-size: 1200 411;
+  background-repeat: no-repeat;
+}
+.filters {
+  width: 1200px;
+  height: 411px;
+  background-color: #288bb3;
+  color: #ffffff;
+  background-image: url("../image/catalog-background.jpg");
+  background-size: 1200 411;
+  background-repeat: no-repeat;
+}
