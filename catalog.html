@@ -66,7 +66,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container main-inner">
+      <div class="page-container">
         <section class="filters">
             <h1 class="inner-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs-list">
@@ -81,7 +82,7 @@
                 </li>
             </ul>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group infrastructure">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -105,7 +106,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Тип жилья:</legend>
+                    <legend class="catalog-filter-title type-housing">Тип жилья:</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                             <label class="control">
@@ -127,17 +128,20 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group price-filter">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                     <input type="text" id="form" name="price-form" value="0" placeholder="От">
                     <input type="text" id="to" name="price-to" value="9000" placeholder="До">
                     <input type="range" min="0" max="9000" step="100">
                 </fieldset>
-                <button class="button apply-filters" type="submit">Применить</button>
-                <button class="button light" type="reset">Сбросить</button>
+                <div class="button-filters">
+                  <button class="button apply-filters" type="submit">Применить</button>
+                  <button class="button light" type="reset">Сбросить</button>
+                </div>
             </form>
         </section>
         <section class="catalog-hotel">
+          <div class="catalog-hotel-management">
             <h2 class="secondary-title">Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешёвое</option>
@@ -172,6 +176,7 @@
                 <path d="M16 12H4V14H16V12Z" fill="black"/>
               </svg>
             </a>
+          </div>
             <ul class="hotel-list">
                 <li class="hotel-item">
                   <figure class="foto">
@@ -285,10 +290,11 @@
                 </button>
             </form>
         </section>
+      </div>
     </main>
     <footer class="page-footer">
       <section class="footer-social">
-        <h2 class="secondary-title">
+        <h2 class="social-title">
           <span class="visually-hidden">
             социальные сети
           </span>
