@@ -66,17 +66,18 @@ body {
 }
 .advantages-list{
   list-style-type:none;
-  margin: 0 auto;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+}
+.advantages-mini {
+  list-style-type:none;
+  display: flex;
 }
 .footer-social-list{
   list-style-type:none;
   width: 107px;
 }
 .subscription {
-  width: 1200px;
   height: 411px;
   background-color: #81B3D3;
   color: #ffffff;
@@ -101,7 +102,6 @@ body {
   background: #F2F2F2;
 }
 .filters {
-  width: 1200px;
   height: 411px;
   background-color: #81B3D3;
   color: #ffffff;
@@ -161,6 +161,13 @@ body {
   color: #FFFFFF;
   width: 400px;
   height: 384px;
+}
+.advantages-big{
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantages-bridge {
+  display: flex;
 }
 .dark-text {
   color:#000000;
@@ -304,15 +311,14 @@ html {
   width: 264px;
   margin-left: auto;
 }
-.page-container {
+.container {
   width: 1200px;
   margin: 0 auto;
 }
 .page-footer {
   display: flex;
-  margin: 0 auto;
-  width: 1200px;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .catalog-filter{
   display: flex;
