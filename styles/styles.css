@@ -68,10 +68,12 @@ body {
   list-style-type:none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0px;
 }
 .advantages-mini {
   list-style-type:none;
   display: flex;
+  padding: 0px;
 }
 .footer-social-list{
   list-style-type:none;
