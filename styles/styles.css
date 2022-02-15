@@ -213,7 +213,7 @@ body {
 .light-text {
   background: #83B3D3;
   color: #FFFFFF;
-  max-width: 400px;
+  width: 400px;
   min-height: 384px;
 }
 .advantages-big{
@@ -225,7 +225,7 @@ body {
 }
 .dark-text {
   color:#000000;
-  max-width: 400px;
+  width: 400px;
   min-height: 384px;
 }
 .advantages-title {
@@ -240,8 +240,8 @@ body {
   background: url("../image/polygonal.svg"), url("../image/background-welcome-sedona.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom 0, top center;
-  background-size: 100% 85px, 100%;
-  min-height: 500px;
+  background-size: 100% 57px, 100%;
+  min-height: 485px;
   display: flex;
   justify-content: center;
   align-items: center;
