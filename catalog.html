@@ -142,40 +142,40 @@
         </section>
         <section class="catalog-hotel">
           <div class="catalog-hotel-management">
-            <h2 class="secondary-title">Найдено гостиниц: 38</h2>
+            <h2 class="secondary-title catalog-hotel-title">Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="popular">Сначала популярное</option>
                 <option value="expensive">Сначала дорогое</option>
             </select>
-            <a class="button-view" href="#">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 0H0V6H4V0Z" fill="black"/>
-                <path d="M16 0H12V6H16V0Z" fill="black"/>
-                <path d="M10 0H6V6H10V0Z" fill="black"/>
-                <path d="M4 8H0V14H4V8Z" fill="black"/>
-                <path d="M16 8H12V14H16V8Z" fill="black"/>
-                <path d="M10 8H6V14H10V8Z" fill="black"/>
-              </svg>
-            </a>
-            <a class="button-view" href="#">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 12H0V14H16V12Z" fill="black"/>
-                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
-              </svg>
-            </a>
-            <a class="button-view" href="#">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 0H0V2H2V0Z" fill="black"/>
-                <path d="M16 0H4V2H16V0Z" fill="black"/>
-                <path d="M2 4H0V6H2V4Z" fill="black"/>
-                <path d="M16 4H4V6H16V4Z" fill="black"/>
-                <path d="M2 8H0V10H2V8Z" fill="black"/>
-                <path d="M16 8H4V10H16V8Z" fill="black"/>
-                <path d="M2 12H0V14H2V12Z" fill="black"/>
-                <path d="M16 12H4V14H16V12Z" fill="black"/>
-              </svg>
-            </a>
+                <a class="button-view" href="#">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 0H0V6H4V0Z" fill="black"/>
+                    <path d="M16 0H12V6H16V0Z" fill="black"/>
+                    <path d="M10 0H6V6H10V0Z" fill="black"/>
+                    <path d="M4 8H0V14H4V8Z" fill="black"/>
+                    <path d="M16 8H12V14H16V8Z" fill="black"/>
+                    <path d="M10 8H6V14H10V8Z" fill="black"/>
+                  </svg>
+                </a>
+                <a class="button-view" href="#">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 12H0V14H16V12Z" fill="black"/>
+                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+                  </svg>
+                </a>
+                <a class="button-view" href="#">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 0H0V2H2V0Z" fill="black"/>
+                    <path d="M16 0H4V2H16V0Z" fill="black"/>
+                    <path d="M2 4H0V6H2V4Z" fill="black"/>
+                    <path d="M16 4H4V6H16V4Z" fill="black"/>
+                    <path d="M2 8H0V10H2V8Z" fill="black"/>
+                    <path d="M16 8H4V10H16V8Z" fill="black"/>
+                    <path d="M2 12H0V14H2V12Z" fill="black"/>
+                    <path d="M16 12H4V14H16V12Z" fill="black"/>
+                  </svg>
+                </a>
           </div>
             <ul class="hotel-list">
                 <li class="hotel-item">
@@ -189,7 +189,7 @@
                   </div>
                   <div class="link-detailed">
                     <a class="detailed-hotel" href="#">Подробнее</a>
-                    <button class=" button favourites">В избранное</button>
+                    <button class="button favourites">В избранное</button>
                   </div>
                   <div class="estimation">
                     <img class="logo-rating" src="image/stars-4.svg" width="91" height="17" alt="четыре звезды">
@@ -207,7 +207,7 @@
                   </div>
                   <div class="link-detailed">
                     <a class="detailed-hotel" href="#">Подробнее</a>
-                    <button class=" button favourites">В избранное</button>
+                    <button class="button favourites">В избранное</button>
                   </div>
                   <div class="estimation">
                     <img class="logo-rating" src="image/stars-3.svg" width="68" height="17" alt="три звезды">
@@ -243,7 +243,7 @@
                   </div>
                   <div class="link-detailed">
                     <a class="detailed-hotel" href="#">Подробнее</a>
-                    <button class=" button favourites">В избранное</button>
+                    <button class="button favourites">В избранное</button>
                   </div>
                   <div class="estimation">
                     <img class="logo-rating" src="image/stars-2.svg" width="43" height="17" alt="две звезды">
@@ -251,13 +251,15 @@
                   </div>
                 </li>
             </ul>
-            <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+            <div class="pagination-show-more-container">
+              <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+            </div>
             <ul class="pagination">
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-prev pagination-disabled">1</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">2</a>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-prev pagination-disabled">1</a>
+              </li>
+              <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
                 </li>
                 <li class="pagination-item">
                     <a class="pagination-link" href="#">3</a>
@@ -274,11 +276,11 @@
             </ul>
         </section>
         <section class="subscription-catalog">
-            <h2 class="secondary-title">Подпишитесь на рассылку</h2>
-            <p class="light-note">
+            <h2 class="secondary-title subscription-title">Подпишитесь на рассылку</h2>
+            <p class="light-note light-note-catalog">
                 Только полезная информация и никакого спама, честное бойскаутское!
             </p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="subscription-form subscription-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
                 <label for="subscription-email">
                     <span class="visually-hidden">
                         email
