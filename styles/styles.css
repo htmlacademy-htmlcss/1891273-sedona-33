@@ -183,13 +183,15 @@ body {
 .catalog-filter-list{
   list-style-type:none;
   padding-left: 0;
+  margin-top: 30px;
 }
 .catalog-filter-item:not(:last-child) {
-  padding-bottom:13px ;
+  padding-bottom:16px ;
 }
 .control-input{
   font-size: 18px;
   line-height: 23px;
+  margin-right: 19px;
 }
 .note {
   font-size: 22px;
@@ -461,9 +463,20 @@ html {
   margin-top: 45px;
 }
 .button-filters {
-  display: flex;
-  flex-direction: column;
-  max-width: 160px;
+  display: grid;
+  align-items: end;
+  align-content: end;
+  gap: 20px;
+}
+.button.apply-filters {
+  height: 48px;
+  color: #ffffff;
+  padding: 0;
+}
+.button.light {
+  height: 23px;
+  padding: 0;
+  margin-bottom: 20px;
 }
 .price {
   display: flex;
@@ -504,18 +517,24 @@ html {
 }
 .price-from {
   height: 48px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 5px 0 0 5px;
   align-self: end;
+  padding: 0;
+  padding-left: 10px;
+  border: #ffffff;
 }
 .price-to {
   height: 48px;
-  border-radius: 0 10px 10px 0;
-  align-self: end;
+  border-radius: 0 5px 5px 0;
+  padding: 0;
+  padding-left: 10px;
+  border: #ffffff;
 }
 .input-price-group {
   display: grid;
   grid-template-columns: 143px 143px;
   grid-template-rows: 82px 40px ;
+  align-items: end;
 }
 .range-price{
   grid-column: 1/3;
