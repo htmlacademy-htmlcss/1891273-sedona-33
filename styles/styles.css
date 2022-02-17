@@ -115,12 +115,18 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  text-transform: uppercase;
 }
 .field{
   background: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  padding-left: 22px;
+}
+.button.subscription-email {
+  border-radius: 0 10px 10px 0;
 }
 .filters {
-  min-height: 411px;
+  min-height: 408px;
   background-color: #81B3D3;
   color: #ffffff;
   background-image: url("../image/catalog-background.jpg");
@@ -176,6 +182,10 @@ body {
 }
 .catalog-filter-list{
   list-style-type:none;
+  padding-left: 0;
+}
+.catalog-filter-item:not(:last-child) {
+  padding-bottom:13px ;
 }
 .control-input{
   font-size: 18px;
@@ -274,11 +284,6 @@ body {
 }
 .hotel-search {
   background-color: #ffffff;
-}
-.subscription-email{
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: uppercase;
 }
 .apply-filters{
   font-weight: bold;
@@ -450,16 +455,15 @@ html {
   width: 1200px;
 }
 .catalog-filter{
-  display: flex;
-  justify-content:space-between ;
+  display: grid;
+  gap: 6px;
+  grid-template-columns: 210px 305px 362px 160px;
+  margin-top: 45px;
 }
 .button-filters {
   display: flex;
   flex-direction: column;
   max-width: 160px;
-}
-.price-filter{
-  max-width: 300px;
 }
 .price {
   display: flex;
@@ -486,4 +490,33 @@ html {
 }
 .subscription-form-catalog {
   margin-bottom: 140px;
+}
+.subscription-form {
+  height: 60px;
+  display: grid;
+  grid-template-columns:  min-content 600px 200px;
+  grid-template-rows: min-content;
+  justify-content: center;
+}
+.catalog-filter-group {
+  border: 0;
+  padding: 0;
+}
+.price-from {
+  height: 48px;
+  border-radius: 10px 0 0 10px;
+  align-self: end;
+}
+.price-to {
+  height: 48px;
+  border-radius: 0 10px 10px 0;
+  align-self: end;
+}
+.input-price-group {
+  display: grid;
+  grid-template-columns: 143px 143px;
+  grid-template-rows: 82px 40px ;
+}
+.range-price{
+  grid-column: 1/3;
 }

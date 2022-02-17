@@ -129,11 +129,13 @@
                     </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group price-filter">
-                    <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <input type="text" id="form" name="price-form" value="0" placeholder="От">
-                    <input type="text" id="to" name="price-to" value="9000" placeholder="До">
-                    <input type="range" min="0" max="9000" step="100">
-                </fieldset>
+                    <legend class="catalog-filter-title title-price">Стоимость, ₽:</legend>
+                    <div class="input-price-group">
+                      <input class="price-from" type="text" id="form" name="price-form" value="0" placeholder="От">
+                      <input class="price-to" type="text" id="to" name="price-to" value="9000" placeholder="До">
+                      <input class="range-price" type="range" min="0" max="9000" step="100">
+                    </div>
+                    </fieldset>
                 <div class="button-filters">
                   <button class="button apply-filters" type="submit">Применить</button>
                   <button class="button light" type="reset">Сбросить</button>
