@@ -279,6 +279,10 @@ body {
   height: 60px;
   display: block;
   margin: 0 auto 91px;
+  padding:15px 0 15px 0;
+  box-sizing:border-box;
+  text-align: center;
+  border-radius: 10px;
 }
 .hotel-search-description{
   font-size: 22px;
@@ -431,6 +435,7 @@ html {
   list-style-type:none;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .navigation-user {
   padding: 0;
@@ -568,4 +573,76 @@ html {
 .button {
   padding: 0;
   height: 37px;
+}
+.navigation-link:hover {
+  color: rgba(117, 98, 87, 1);
+}
+.navigation-link.popup:hover {
+  color: #ffffff;
+}
+.navigation-link.popup:active {
+  color: rgba(255, 255, 255, 0.3);;
+}
+.navigation-icon {
+  fill: #000000;
+}
+.navigation-icon:hover {
+  fill:rgba(117, 98, 87, 1);
+}
+.navigation-link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+.navigation-icon:active {
+  fill:rgba(117, 98, 87, 0.3);
+}
+.navigation-item-main-current::before {
+  bottom: 0;
+  right: 17px;
+  left: 17px;
+  right: 270px;
+  content: "";
+  background-color: rgba(117, 98, 87, 1);
+  height: 4px;
+  position: absolute;
+}
+.navigation-item-catalog-current::before {
+  bottom: 0;
+  right: 17px;
+  left: 119px;
+  right: 144px;
+  content: "";
+  background-color: rgba(117, 98, 87, 1);
+  height: 4px;
+  position: absolute;
+}
+.hotel-search-button:hover {
+  background-color: rgba(97, 80, 72, 1);
+}
+.hotel-search-button:focus {
+  background-color: rgba(97, 80, 72, 1);
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+}
+.hotel-search-button:active {
+  background-color: #615048;
+  color:rgba(255, 255, 255, 0.3);
+}
+.field:hover {
+  background-color: #E5E5E5;
+}
+.field:focus {
+  background-color: #E5E5E5;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+}
+.button-subscription-email:hover {
+  background-color: #68A2CA;
+}
+.button-subscription-email:focus{
+  border: 3px solid #756257;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.button-subscription-email:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);;
 }
