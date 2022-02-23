@@ -80,15 +80,18 @@ body {
 }
 .footer-social-list{
   list-style-type:none;
-  margin: 0;
+  margin: 47px auto 55px 55px ;
   padding: 0;
   max-width: 157px;
   display: flex;
   flex-wrap: wrap;
 }
 .footer-social-item {
-  width: 50px;
-  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.button-social {
+  padding: 15px 15px 15px 15px;
 }
 .htmlacademy-link {
   display: block;
@@ -641,8 +644,46 @@ html {
 .button-subscription-email:focus{
   border: 3px solid #756257;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
 }
 .button-subscription-email:active {
   background-color: #68A2CA;
-  color: rgba(255, 255, 255, 0.3);;
+  color: rgba(255, 255, 255, 0.3);
+}
+/* .mistake {
+  background-color: #ffffff;
+  border: 1px solid #ff0000;
+}*/
+.footer-social-icon {
+  fill: #83B3D3;
+}
+.footer-social-icon:hover {
+  fill: #68A2CA;
+}
+.footer-social-icon:focus {
+  fill: #68A2CA;
+}
+.footer-social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+.contacts-phone:hover {
+  color: #756257;
+}
+.contacts-phone:focus {
+  color: #756257;
+}
+.contacts-phone:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+.htmlacademy-link-icon:hover {
+  fill: #756257;
+}
+.htmlacademy-link-icon:focus {
+  fill: #756257;
+}
+.htmlacademy-link-icon:active {
+  fill: rgba(117, 98, 87, 0.3);
+}
+.htmlacademy-link-icon {
+  fill:#000000;
 }
