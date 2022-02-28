@@ -85,10 +85,12 @@ body {
   max-width: 157px;
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .footer-social-item {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 .button-social {
   padding: 15px 15px 15px 15px;
@@ -97,6 +99,7 @@ body {
   display: block;
   padding: 10px 10px 10px 10px;
   margin: 34px 62px 34px 62px;
+  box-sizing: border-box;
 }
 .subscription {
   min-height: 411px;
@@ -334,6 +337,7 @@ body {
   max-width: 720px;
   margin-top: 40px;
   max-height: 50px;
+  box-sizing: border-box;
 }
 .hotel-list {
   list-style-type:none;
@@ -554,6 +558,7 @@ html {
   margin: 0 auto;
   background-color: #ffffff;
   width: 1200px;
+  box-sizing: border-box;
 }
 .catalog-filter{
   display: grid;
