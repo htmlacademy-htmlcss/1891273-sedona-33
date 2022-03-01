@@ -44,7 +44,7 @@
               </svg>
             </a>
           </li>
-          <li class="user-item">
+          <li class="user-item user-item-likes">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Нравится
@@ -60,6 +60,9 @@
                 </defs>
               </svg>
             </a>
+            <span class="counter">
+              0
+            </span>
           </li>
           <li class="user-item">
             <a class="navigation-link popup" href="catalog.html">Хочу сюда!</a>
@@ -91,22 +94,22 @@
                 </figure>
               </div>
               <ul class="advantages-mini">
-                <li class="advantages-item dark-text background-light">
-                  <img class="icon" src="image/icon-home.svg" width="75" height="72" alt="иконка дом">
+                <li class="advantages-item dark-text light-background block-advantage-mini">
+                  <img class="advantages-item-icon" src="image/icon-home.svg" width="75" height="72" alt="иконка дом">
                     <h3 class="advantages-title">Жильё</h3>
                     <p class="advantages-description">
                       Рекомендуем пожить в настоящем мотеле, всё как в кино!
                     </p>
                 </li>
-                <li class="advantages-item dark-text">
-                  <img class="icon" src="image/icon-burger.svg" width="74" height="70" alt="иконка бургер">
+                <li class="advantages-item dark-text block-advantage-mini">
+                  <img class="advantages-item-icon" src="image/icon-burger.svg" width="74" height="70" alt="иконка бургер">
                     <h3 class="advantages-title">Еда</h3>
                     <p class="advantages-description">
                       Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                     </p>
                 </li>
-                <li class="advantages-item dark-text background-light">
-                  <img class="icon" src="image/icon-gift.svg" width="64" height="75" alt="иконка подарок">
+                <li class="advantages-item dark-text light-background block-advantage-mini">
+                  <img class="advantages-item-icon" src="image/icon-gift.svg" width="64" height="75" alt="иконка подарок">
                   <h3 class="advantages-title">Сувениры</h3>
                   <p class="advantages-description">
                     Не только китайского, но и настоящего местного производства!
@@ -128,21 +131,21 @@
                 </div>
               </div>
             </li>
-            <li class="advantages-item dark-text background-light">
+            <li class="advantages-item dark-text light-background block-advantage-mini">
                 <h3 class="advantages-title">Небольшая площадь</h3>
                 <span class="advantages-number">— №3 —</span>
                 <p class="advantages-description">
                   Все достопримечательности находятся очень близко
                 </p>
             </li>
-            <li class="advantages-item dark-text background-dark">
+            <li class="advantages-item dark-text translucent-background block-advantage-mini">
                 <h3 class="advantages-title">Красивая дорога</h3>
                 <span class="advantages-number">— №4 —</span>
                 <p class="advantages-description">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
             </li>
-            <li class="advantages-item dark-text background-light">
+            <li class="advantages-item dark-text light-background block-advantage-mini">
               <h3 class="advantages-title">Мало туристов</h3>
               <span class="advantages-number">— №5 —</span>
               <p class="advantages-description">
@@ -172,12 +175,11 @@
               </span>
             </label>
             <input class="field mistake"  placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email">
-            <button class="button subscription-email button-subscription-email" type="submit">
+            <button class="button subscription-email" type="submit">
                 Подписаться
             </button>
           </form>
         </section>
-      </div>
     </main>
       <footer class="page-footer">
         <section class="footer-social">
