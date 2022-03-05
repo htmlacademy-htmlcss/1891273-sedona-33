@@ -1081,7 +1081,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 40px;
   transform: translateX(-50%);
-  left: 50%;
+  left: 12px;
   z-index: 1;
   box-sizing: border-box;
   display: none;
@@ -1097,4 +1097,148 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   align-items: center;
   justify-content: start;
   color: #000000;
+}
+.modal-container-close {
+  display: none;
+}
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 28px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 287px;
+}
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+  width: 227px;
+}
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);;
+}
+.range-toggle:focus{
+  outline: 3px solid #83B3D3;
+}
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+}
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+.range-wrapper-inputs {
+  margin-top: 34px;
+  display: flex;
+}
+.range-input {
+  background-color: rgba(255, 255, 255, 0);
+  color: #FFFFFF;
+  height: 48px;
+  box-sizing: border-box;
+  width: 143px;
+  font-family: "ptsans-400", sans-serif;
+  font-size: 18px;
+  padding-left: 18px;
+}
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.range-input-min {
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-radius: 4px 0 0 4px;
+}
+.explanation {
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 12px;
+  color:rgba(255, 255, 255, 0.3);
+  font-family: "ptsans-400", sans-serif;
+  font-size: 18px;
+}
+.range-input-max {
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-radius: 0 4px 4px 0;
+}
+.control {
+  position: relative;
+  display: block;
+  padding-left: 39px;
+  cursor: pointer;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.control:hover .control-mark,
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../image/checkbox-mark.svg);
+  background-size: 12px 10px;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+.range-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.range-input:active {
+  background-color: #756257;
+}
+.tooltip-text:after {
+  content:'';
+  background-image: url("../image/corner.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  top: -9px;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
 }
