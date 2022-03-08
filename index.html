@@ -280,8 +280,20 @@
                   <label for="number-adults" class="label-input">
                     Взрослые:
                   </label>
-                  <input class="modal-input modal-input-number" type="number" id="number-adults" name="number-adults" min="1">
-                </li>
+                  <div class="modal-input-container">
+                    <button class="modal-input-minus">
+                      <svg  class="icon-modal-minus icon-modal-input" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L0 1L13 1V0L0 0Z" />
+                      </svg>
+                    </button>
+                    <input class="modal-input modal-input-number" type="number" id="number-adults" name="number-adults" min="1" value="2">
+                    <button class="modal-input-plus">
+                      <svg class="icon-modal-plus icon-modal-input" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                        </svg>
+                    </button>
+                  </div>
+                  </li>
                 <li class="modal-input-item item-children">
                   <span class="form-label form-label-icon">
                     <label for="number-children" class="label-input">
@@ -306,7 +318,19 @@
                       </span>
                     </span>
                   </span>
-                  <input class="modal-input modal-input-number" type="number" id="number-children" name="number-children" min="0">
+                  <div class="modal-input-container">
+                    <button class="modal-input-minus">
+                      <svg  class="icon-modal-minus icon-modal-input" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L0 1L13 1V0L0 0Z" />
+                      </svg>
+                    </button>
+                    <input class="modal-input modal-input-number" type="number" id="number-children" name="number-children" min="0" value="1">
+                    <button class="modal-input-plus">
+                      <svg class="icon-modal-plus icon-modal-input" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                        </svg>
+                    </button>
+                  </div>
                 </li>
                 <li class="modal-input-item item-submit">
                   <input class="modal-input-submit" type="submit" name="send-data" value="Найти">

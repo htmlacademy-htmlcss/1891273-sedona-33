@@ -1028,10 +1028,6 @@ html {
   background-size: 15px 15px;
   background-position: right 19px center;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
-  background: none;
-  -webkit-appearance: none;
-}
 .modal-input-submit {
   border: none;
   margin: 0;
@@ -1049,6 +1045,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .modal-input-number {
   text-align: center;
   text-underline-position: auto;
+  box-sizing: border-box;
+  width: 133px;
 }
 .tooltip-icon {
   fill: #83B3D3;
@@ -1160,6 +1158,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   appearance: none;
   margin: 0;
 }
+
+.modal-input[type="date"]::-webkit-calendar-picker-indicator {
+  background: none;
+  -webkit-appearance: none;
+}
+
+.modal-input-number::-webkit-outer-spin-button,
+.modal-input-number::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
 .range-input-min {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
@@ -1241,4 +1250,53 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   right:0;
   margin-left: auto;
   margin-right: auto;
+}
+.modal-input-container {
+  display: flex;
+  position: relative;
+}
+.modal-input-plus {
+  border: none;
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.icon-modal-plus {
+  margin-top: 5px;
+  padding: 3px;
+}
+.icon-modal-minus {
+  margin-top: 5px;
+  padding: 9px 3px;
+}
+.icon-modal-input {
+  fill: rgba(0, 0, 0, 0.3);
+}
+.modal-input-plus:hover .icon-modal-input,
+.modal-input-minus:hover .icon-modal-input {
+  fill: #000000;
+}
+.modal-input-plus:focus .icon-modal-input,
+.modal-input-minus:focus .icon-modal-input  {
+  fill: #000000;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.modal-input-plus:active .icon-modal-input,
+.modal-input-minus:active .icon-modal-input {
+  fill: rgba(0, 0, 0, 0.2);
+}
+.modal-input-minus {
+  border: none;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
 }
