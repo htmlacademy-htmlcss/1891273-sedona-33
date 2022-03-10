@@ -123,6 +123,7 @@ body {
   height: 60px;
   font-family: ptsans-400, sans-serif;
   font-size: 18px;
+  margin-right: 0;
 }
 .filters {
   min-height: 408px;
@@ -234,6 +235,7 @@ body {
   background-repeat: no-repeat;
   background-size: 12px 7px;
   background-position: right 21px center;
+  -webkit-appearance: none;
 }
 
 .select-control:hover,
@@ -370,6 +372,7 @@ body {
 }
 .foto {
   margin: 0;
+  display: block;
 }
 .name-hotel{
   font-weight: 700;
@@ -545,7 +548,7 @@ html {
 .navigation-list {
   padding: 0;
   max-width: 500px;
-  margin: 0 auto 0 30px;
+  margin: 0 auto 0 20px;
   list-style-type:none;
   display: flex;
   flex-wrap: wrap;
@@ -569,7 +572,7 @@ html {
   background-color: #756257;
   color: #FFFFFF;
   text-transform:uppercase;
-  padding: 9px 25px;
+  padding: 9px 35px;
   margin:7px 0 0 20px;
   border-radius: 4px;
 }
@@ -902,6 +905,9 @@ html {
   color: rgba(255, 255, 255, 0.3);
   border: none;
 }
+.subscription-email.button {
+  margin-left: 0;
+}
 .pagination-show-more:hover {
   background-color: #68A2CA;
 }
@@ -1198,17 +1204,34 @@ html {
 }
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   margin: 0;
+}
+.range-input[type=number] {
+  -moz-appearance:textfield;
+}
+.modal-input-number[type=number] {
+  -moz-appearance:textfield;
 }
 
 .modal-input[type="date"]::-webkit-calendar-picker-indicator {
   background: none;
   -webkit-appearance: none;
 }
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  display: none;
+  appearance: none;
+  margin: 0;
+}
 
 .modal-input-number::-webkit-outer-spin-button,
 .modal-input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
