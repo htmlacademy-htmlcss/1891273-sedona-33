@@ -253,7 +253,7 @@ body {
 
 .select-control:hover,
 .select-control:focus {
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 .select-control:active {
   color: #E6E6E6;
@@ -479,7 +479,7 @@ body {
 }
 .favourites:focus {
   background-color: #68A2CA;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
 }
 .favourites:active {
   background-color: #68A2CA;
@@ -503,7 +503,7 @@ body {
 }
 .pagination-link:focus {
   background-color: #68A2CA;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
   box-sizing: border-box;
 }
 .pagination-link:active {
@@ -580,6 +580,10 @@ html {
   margin-bottom: -7px;
   cursor: pointer;
 }
+.logo:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
 .navigation-list {
   padding: 0;
   max-width: 500px;
@@ -607,7 +611,7 @@ html {
   color: #000000;
   text-decoration: none;
   display: block;
-  margin: 0;
+  margin: 0 1px;
   padding:19px 17px;
   display: block;
 }
@@ -681,19 +685,20 @@ html {
 .button-view {
   width: 48px;
   height: 48px;
-  border:2px solid #E6E6E6;
+  border: 2px solid #E6E6E6;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
-.button-view:hover {
-  border: 2px solid #83B3D3;
+.button-view:hover,
+.button-view:focus,
+.button-view:active {
+  border: none;
+  outline: 2px solid #83B3D3;
 }
-.button-view:focus {
-  border: 2px solid #83B3D3;
-}
+
 .selected {
   border: 2px solid #000000;
 }
@@ -754,6 +759,10 @@ html {
 }
 .navigation-link:hover {
   color: rgba(117, 98, 87, 1);
+}
+.navigation-link:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 .navigation-link:active {
   color: rgba(117, 98, 87, 0.3);
@@ -899,7 +908,7 @@ html {
 .navigation-item-main-current::before {
   position: absolute;
   right: 17px;
-  bottom: 0;
+  bottom: -2px;
   left: 17px;
   height: 2px;
   background-color: rgba(117, 98, 87, 1);
@@ -935,13 +944,17 @@ html {
 }
 
 .subscription-email:focus{
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
 }
 
 .subscription-email:active {
   background-color: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
   border: none;
+}
+.subscription-email:disabled {
+  background-color: #ffffff;
+  border: 2px solid #FF5757;
 }
 .subscription-email.button {
   margin-left: 0;
@@ -954,7 +967,7 @@ html {
 }
 
 .pagination-show-more:focus{
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
 }
 
 .pagination-show-more:active {
@@ -984,7 +997,7 @@ html {
 }
 .apply-filters:focus {
   background-color: #68A2CA;
-  border: 3px solid #ffffff;
+  outline: 3px solid #ffffff;
 }
 .apply-filters:active {
   background-color: #68A2CA;
@@ -1314,14 +1327,14 @@ html {
   background-color: #ffffff;
   border-radius: 4px;
 }
-.catalog-filter-item:hover .control-mark {
+.control-input:hover + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.catalog-filter-item:focus .control-mark {
+.control-input:focus + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
-.catalog-filter-item:active .control-mark {
+.control-input:active + .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -1352,6 +1365,10 @@ html {
 }
 .range-input:active {
   background-color: #756257;
+}
+.control-input:disabled + .control-mark {
+  background-color: #ffffff;
+  outline: none;
 }
 .tooltip-text:after {
   content:'';
@@ -1425,4 +1442,35 @@ html {
 .popup:active {
   background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
+}
+.modal-input-submit:hover {
+  background-color: #68A2CA;
+}
+
+.modal-input-submit:focus{
+  outline: 3px solid #756257;
+}
+
+.modal-input-submit:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+}
+.select-control-container {
+  display: flex;
+  margin: 30px 0 0 0;
+  justify-content: end;
+  align-items: center;
+}
+.select-control-number {
+  margin: 0 0 0 50px;
+  max-width: 160px;
+}
+.title-select-control {
+  font-size: 18px;
+  line-height: 23px;
 }
