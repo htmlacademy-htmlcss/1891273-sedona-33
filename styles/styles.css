@@ -130,7 +130,7 @@ body {
   min-height: 411px;
   background-color: #81B3D3;
   color: #ffffff;
-  background-image: url("../image/background-mailing.jpg");
+  background-image: url("../image/background/background-mailing.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -157,7 +157,7 @@ body {
   min-height: 408px;
   background-color: #756257;
   color: #ffffff;
-  background-image: url("../image/catalog-background.jpg");
+  background-image: url("../image/background/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: left;
@@ -289,7 +289,7 @@ body {
   border-radius: 4px;
   appearance: none;
   background-color: #FFFFFF;
-  background-image: url("../image/arrow-select.svg");
+  background-image: url("../image/icon/arrow-select.svg");
   background-repeat: no-repeat;
   background-size: 12px 7px;
   background-position: right 21px center;
@@ -379,7 +379,7 @@ body {
 
 .promo{
   background-color: #E5E5E5;
-  background: url("../image/polygonal.svg"), url("../image/background-welcome-sedona.jpg");
+  background: url("../image/icon/polygonal.svg"), url("../image/background/background-welcome-sedona.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom 0, top center;
   background-size: 100% 57px, 100%;
@@ -1219,7 +1219,7 @@ body {
   height: 53px;
   background-color: #ffffff;
   border: none;
-  background-image: url("../image/close-modal.svg");
+  background-image: url("../image/icon/close-modal.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1561,7 +1561,7 @@ body {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url(../image/checkbox-mark.svg);
+  background-image: url("../image/icon/checkbox-mark.svg");
   background-size: 12px 10px;
   background-repeat: no-repeat;
   background-position: 5px 5px;
@@ -1602,7 +1602,7 @@ body {
 
 .tooltip-text:after {
   content:'';
-  background-image: url("../image/corner.svg");
+  background-image: url("../image/icon/corner.svg");
   width: 19px;
   height: 9px;
   position:absolute;
