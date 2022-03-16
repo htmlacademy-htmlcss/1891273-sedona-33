@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32.png">
   </head>
   <body class="body-index">
     <div class="container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="logo">
+          <a class="logo" href="index.html">
             <span class="visually-hidden">Логотип</span>
             <img src="image/icon/logo.svg" width="139" height="70" alt="Логотип Седона.">
           </a>
@@ -141,7 +143,7 @@
             <label for="subscription-email">
               <span class="visually-hidden">email</span>
             </label>
-            <input class="field mistake"  placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email">
+            <input class="field mistake"  placeholder="Ваш e-mail" type="email" id="subscription-email" required>
             <button class="button subscription-email" type="submit">Подписаться</button>
           </form>
         </section>
@@ -194,6 +196,7 @@
         </section>
         <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         <section class="html-link">
+          <h3 class="visually-hidden">Ссылка на сайт html-academy</h3>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
             <svg class="htmlacademy-link-icon" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z" />
@@ -217,13 +220,13 @@
             <button class="modal-close-button">
               <span class="visually-hidden">Закрыть</span>
             </button>
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
             <form class="modal-input-form" action="https://echo.htmlacademy.ru/" method="get">
               <ul class="modal-input-list">
                 <li class="modal-input-item data-start">
-                  <label for="start" class="label-input">Дата заезда:</label>
+                  <label for="trip-start" class="label-input">Дата заезда:</label>
                   <div class="modal-input-container">
-                    <input class="modal-input modal-input-date" type="date" id="start" name="trip-start" value="27 апреля 2021">
+                    <input class="modal-input modal-input-date" type="date" id="trip-start" value="2021-04-27" required>
                     <span class="container-calendar">
                       <svg class="calendar" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z" />
@@ -243,9 +246,9 @@
                   <span class="comment-message error">Мы не можем отправить вас в прошлое.</span>
                 </li>
                 <li class="modal-input-item data-end">
-                  <label for="end" class="label-input">Дата выезда:</label>
+                  <label for="trip-end" class="label-input">Дата выезда:</label>
                   <div class="modal-input-container">
-                    <input class="modal-input modal-input-date" type="date" id="end" name="trip-end" value="1 сентября 2022">
+                    <input class="modal-input modal-input-date" type="date" id="trip-end" value="2022-09-01" required>
                     <span class="container-calendar">
                       <svg class="calendar" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z" />
@@ -272,7 +275,7 @@
                         <path d="M0 0L0 1L13 1V0L0 0Z" />
                       </svg>
                     </button>
-                    <input class="modal-input modal-input-number" type="number" id="number-adults" name="number-adults" min="1" value="2">
+                    <input class="modal-input modal-input-number" type="number" id="number-adults" min="1" value="2" required>
                     <button class="modal-input-plus">
                       <svg class="icon-modal-plus icon-modal-input" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
@@ -306,7 +309,7 @@
                         <path d="M0 0L0 1L13 1V0L0 0Z" />
                       </svg>
                     </button>
-                    <input class="modal-input modal-input-number" type="number" id="number-children" name="number-children" min="0" value="1">
+                    <input class="modal-input modal-input-number" type="number" id="number-children" min="0" value="1">
                     <button class="modal-input-plus">
                       <svg class="icon-modal-plus icon-modal-input" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />

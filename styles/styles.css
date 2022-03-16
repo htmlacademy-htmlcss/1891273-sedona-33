@@ -39,7 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: ptsans-400, sans-serif;
+  font-family: "ptsans-400", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background: #F2F2F2;
@@ -479,6 +479,8 @@ body {
 .foto {
   margin: 0;
   display: block;
+  text-decoration: none;
+  color: #000000;
 }
 
 .name-hotel{
@@ -486,6 +488,8 @@ body {
   font-size: 24px;
   line-height: 31px;
   margin: 0;
+  font-family: "ptsans-700", sans-serif;
+  padding-top: 16px;
 }
 
 .description-hotel{
@@ -840,7 +844,7 @@ body {
   opacity: 0.6;
 }
 
-.foto:focus .foto-hotel{
+.foto:focus {
   outline: 3px solid #83B3D3;
 }
 
@@ -973,11 +977,6 @@ body {
   background-color: #E5E5E5;
   outline: 3px solid #83B3D3;
 }
-
-/* .mistake {
-  background-color: #ffffff;
-  border: 1px solid #ff0000;
-}*/
 
 .footer-social-icon {
   fill: #83B3D3;
