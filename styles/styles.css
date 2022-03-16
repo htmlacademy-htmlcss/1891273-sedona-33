@@ -1600,7 +1600,7 @@ body {
 }
 
 .tooltip-text:after {
-  content:'';
+  content:"";
   background-image: url("../image/icon/corner.svg");
   width: 19px;
   height: 9px;
