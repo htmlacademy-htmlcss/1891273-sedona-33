@@ -23,7 +23,7 @@
               <a class="navigation-link" href="about.sedona">О Седоне</a>
             </li>
             <li class="navigation-item navigation-item-catalog-current">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -58,7 +58,7 @@
               <span class="counter">0</span>
             </li>
             <li  class="user-item">
-              <a class="navigation-link navigation-link popup" href="catalog.html">Хочу сюда!</a>
+              <a class="navigation-link navigation-link popup" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -104,7 +104,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group type-of-housing">
               <legend class="catalog-filter-title type-housing">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -145,10 +145,10 @@
                 </div>
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -170,6 +170,7 @@
               <option value="option-control expensive">Сначала дорогое</option>
             </select>
             <a class="button-view selected" href="#">
+              <h3 class="visually-hidden">вид сеткой</h3>
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 0H0V6H4V0Z" fill="black"/>
                 <path d="M16 0H12V6H16V0Z" fill="black"/>
@@ -180,12 +181,15 @@
               </svg>
             </a>
             <a class="button-view" href="#">
+              <h3 class="visually-hidden">вид карточек по отдельности</h3>
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 12H0V14H16V12Z" fill="black"/>
                 <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
               </svg>
             </a>
             <a class="button-view" href="#">
+              <h3 class="visually-hidden">вид списком</h3>
+              <h3 class="visu">
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 0H0V2H2V0Z" fill="black"/>
                 <path d="M16 0H4V2H16V0Z" fill="black"/>
@@ -201,7 +205,7 @@
           <ul class="hotel-list">
             <li class="hotel-item">
               <a class="foto" href="#">
-                <img class="foto-hotel" src="image/content/сatalog-hotel/amara-resort-spa.jpg" width="299" height="206" style="display: block;" alt="фото Амара резорт-спа.">
+                <img class="foto-hotel" src="image/content/сatalog-hotel/amara-resort-spa.jpg" width="299" height="206" alt="фото Амара резорт-спа.">
                 <h3 class="name-hotel">Amara Resort & Spa</h3>
               </a>
               <div class="price">
@@ -210,7 +214,7 @@
               </div>
               <div class="link-detailed">
                 <a class="detailed-hotel" href="#">Подробнее</a>
-                <button class="button favourites">В избранное</button>
+                <button class="button favourites" type="button">В избранное</button>
               </div>
               <div class="estimation">
                 <img class="logo-rating" src="image/icon/stars-4.svg" width="91" height="17" alt="четыре звезды.">
@@ -219,7 +223,7 @@
             </li>
             <li class="hotel-item">
               <a class="foto" href="#">
-                <img class="foto-hotel" src="image/content/сatalog-hotel/desert-quail-inn.jpg" width="299" height="206" style="display: block;" alt="фото Дезет Квеил ин.">
+                <img class="foto-hotel" src="image/content/сatalog-hotel/desert-quail-inn.jpg" width="299" height="206" alt="фото Дезет Квеил ин.">
                 <h3 class="name-hotel">Desert Quail Inn</h3>
               </a>
               <div class="price">
@@ -228,7 +232,7 @@
               </div>
               <div class="link-detailed">
                 <a class="detailed-hotel" href="#">Подробнее</a>
-                <button class="button favourites">В избранное</button>
+                <button class="button favourites" type="button">В избранное</button>
               </div>
               <div class="estimation">
                 <img class="logo-rating" src="image/icon/stars-3.svg" width="68" height="17" alt="три звезды.">
@@ -237,7 +241,7 @@
             </li>
             <li class="hotel-item">
               <a class="foto" href="#">
-                <img class="foto-hotel" src="image/content/сatalog-hotel/villas-at-poco-diablo.jpg" width="299" height="206" style="display: block;" alt="фото Виллас эт поко диабло.">
+                <img class="foto-hotel" src="image/content/сatalog-hotel/villas-at-poco-diablo.jpg" width="299" height="206" alt="фото Виллас эт поко диабло.">
                 <h3 class="name-hotel">Villas at Poco Diablo</h3>
               </a>
               <div class="price">
@@ -246,7 +250,7 @@
               </div>
               <div class="link-detailed">
                 <a class="detailed-hotel" href="#">Подробнее</a>
-                <button class="button favourites active">В избранном</button>
+                <button class="button favourites active" type="button">В избранном</button>
               </div>
               <div class="estimation">
                 <img class="logo-rating" src="image/icon/stars-2.svg" width="43" height="17" alt="две звезды.">
@@ -255,7 +259,7 @@
             </li>
             <li class="hotel-item">
               <a class="foto" href="#">
-                <img class="foto-hotel" src="image/content/сatalog-hotel/greentree-inn.jpg" width="299" height="206" style="display: block;" alt="фото Гринтри ин.">
+                <img class="foto-hotel" src="image/content/сatalog-hotel/greentree-inn.jpg" width="299" height="206" alt="фото Гринтри ин.">
                 <h3 class="name-hotel">GreenTree Inn</h3>
               </a>
               <div class="price">
@@ -264,7 +268,7 @@
               </div>
               <div class="link-detailed">
                 <a class="detailed-hotel" href="#">Подробнее</a>
-                <button class="button favourites">В избранное</button>
+                <button class="button favourites" type="button">В избранное</button>
               </div>
               <div class="estimation">
                 <img class="logo-rating" src="image/icon/stars-2.svg" width="43" height="17" alt="две звезды.">
@@ -273,7 +277,7 @@
             </li>
           </ul>
           <div class="pagination-show-more-container">
-            <button class="button pagination-show-more">Загрузить ещё</button>
+            <button class="button pagination-show-more" type="button">Загрузить ещё</button>
           </div>
           <div class="pagination-container">
             <ul class="pagination">
@@ -327,9 +331,7 @@
       </main>
       <footer class="page-footer">
         <section class="footer-social">
-          <h2 class="social-title">
-            <span class="visually-hidden">социальные сети</span>
-          </h2>
+          <h2 class="visually-hidden">социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button-social" href="https://twitter.com/htmlacademy_ru">
@@ -395,8 +397,11 @@
       <div class="modal-container modal-container-close">
         <div class="modal modal-hotel-search">
           <section class="modal-content">
-            <button class="modal-close-button">
+            <button class="modal-close-button" type="button">
               <span class="visually-hidden">Закрыть</span>
+              <svg  class="cross" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" />
+              </svg>
             </button>
             <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
             <form class="modal-input-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -448,13 +453,15 @@
                 <li class="modal-input-item item-adults">
                   <label for="number-adults" class="label-input">Взрослые:</label>
                   <div class="modal-input-container">
-                    <button class="modal-input-minus">
+                    <button class="modal-input-minus" type="button">
+                      <h3 class="visually-hidden">кнопка минус</h3>
                       <svg  class="icon-modal-minus icon-modal-input" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0L0 1L13 1V0L0 0Z" />
                       </svg>
                     </button>
                     <input class="modal-input modal-input-number" type="number" id="number-adults" min="1" value="2" required>
-                    <button class="modal-input-plus">
+                    <button class="modal-input-plus" type="button">
+                      <h3 class="visually-hidden">кнопка плюс</h3>
                       <svg class="icon-modal-plus icon-modal-input" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
                       </svg>
@@ -482,13 +489,15 @@
                     </span>
                   </span>
                   <div class="modal-input-container">
-                    <button class="modal-input-minus">
+                    <button class="modal-input-minus" type="button">
+                      <h3 class="visually-hidden">кнопка минус</h3>
                       <svg  class="icon-modal-minus icon-modal-input" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0L0 1L13 1V0L0 0Z" />
                       </svg>
                     </button>
                     <input class="modal-input modal-input-number" type="number" id="number-children" min="0" value="1">
-                    <button class="modal-input-plus">
+                    <button class="modal-input-plus" type="button">
+                      <h3 class="visually-hidden">кнопка плюс</h3>
                       <svg class="icon-modal-plus icon-modal-input" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
                       </svg>
