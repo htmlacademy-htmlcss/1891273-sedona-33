@@ -1756,6 +1756,8 @@ body {
   margin-top: 15px;
 }
 
-.field:invalid {
+.field:focus:invalid {
   box-shadow: inset 0 0 0 2px #FF5757;
 }
+
+
