@@ -1756,6 +1756,6 @@ body {
   margin-top: 15px;
 }
 
-.field:invalid .error {
+.field:invalid {
   box-shadow: inset 0 0 0 2px #FF5757;
 }
