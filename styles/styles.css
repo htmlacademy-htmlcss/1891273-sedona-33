@@ -206,7 +206,7 @@ body {
   font-size: 60px;
   line-height: 68px;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 40px;
 }
 
 .breadcrumbs-list {
@@ -216,7 +216,6 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-top: 5px;
 }
 
 .catalog-filter-title {
@@ -408,7 +407,7 @@ body {
   min-height: 60px;
   display: block;
   margin: 0 auto 91px;
-  padding:15px 0 15px 0;
+  padding:13px 0 13px 0;
   box-sizing:border-box;
   text-align: center;
   border-radius: 10px;
@@ -417,7 +416,7 @@ body {
 .hotel-search-description {
   font-size: 22px;
   line-height: 26px;
-  max-width: 580px;
+  max-width: 590px;
   margin: 0 auto;
   padding-top: 29px;
   padding-bottom: 56px;
@@ -474,7 +473,7 @@ body {
   max-width: 339px;
   padding: 20px;
   display: grid;
-  gap:16px;
+  gap:15px;
 }
 
 .foto {
@@ -490,7 +489,7 @@ body {
   line-height: 31px;
   margin: 0;
   font-family: "ptsans-700", sans-serif;
-  padding-top: 16px;
+  padding-top: 15px;
 }
 
 .description-hotel {
@@ -734,7 +733,7 @@ body {
   text-decoration: none;
   display: block;
   margin: 0 1px;
-  padding:19px 17px;
+  padding:19px 15px 19px 17px;
   display: block;
 }
 
@@ -1479,7 +1478,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: 0;
+  right: -10px;
 }
 
 .range-wrapper-inputs {
@@ -1756,6 +1755,8 @@ body {
   margin-top: 15px;
 }
 
-.field:invalid .error {
+.field:focus:invalid {
   box-shadow: inset 0 0 0 2px #FF5757;
 }
+
+
