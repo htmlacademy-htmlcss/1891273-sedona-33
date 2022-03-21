@@ -128,7 +128,7 @@ body {
 
 .subscription {
   min-height: 411px;
-  background-color: #81B3D3;
+  background-color: #6c879e;
   color: #ffffff;
   background-image: url("../image/background/background-mailing.jpg");
   background-size: 100% auto;
@@ -155,7 +155,7 @@ body {
 
 .filters {
   min-height: 408px;
-  background-color: #756257;
+  background-color: #6c879e;
   color: #ffffff;
   background-image: url("../image/background/catalog-background.jpg");
   background-size: 100% auto;
@@ -1748,6 +1748,7 @@ body {
 }
 
 .promo {
+  background-color: #6c879e;
   background: url("../image/icon/polygonal.svg"), url("../image/background/background-welcome-sedona.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom 0, top center;
@@ -1756,8 +1757,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.background-promo {
-  background-color: #000000;
 }
