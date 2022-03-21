@@ -376,18 +376,6 @@ body {
   margin-top: -30px;
 }
 
-.promo {
-  background-color: #000000;
-  background: url("../image/icon/polygonal.svg"), url("../image/background/background-welcome-sedona.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left bottom 0, top center;
-  background-size: 100% 57px, 100%;
-  min-height: 485px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .light-background {
   background: rgba(131, 179, 211, 0.12);
 }
@@ -1759,4 +1747,17 @@ body {
   box-shadow: inset 0 0 0 2px #FF5757;
 }
 
+.promo {
+  background: url("../image/icon/polygonal.svg"), url("../image/background/background-welcome-sedona.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom 0, top center;
+  background-size: 100% 57px, 100%;
+  min-height: 485px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.background-promo {
+  background-color: #000000;
+}
