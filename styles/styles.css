@@ -1749,7 +1749,7 @@ body {
 
 .promo {
   background-color: #6c879e;
-  background: url("../image/icon/polygonal.svg"), url("../image/background/background-welcome-sedona.jpg");
+  background-image: url("../image/icon/polygonal.svg"), url("../image/background/background-welcome-sedona.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom 0, top center;
   background-size: 100% 57px, 100%;
